@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F1"
+    tools:context="com.zzptc.sky.dbphoneguard.activities.UpdateActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlb_update"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="关于与更新"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tlb_update"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/baidu_guard"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V8.12.0"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rl_logo">
+
+        <LinearLayout
+            android:id="@+id/ll_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="1px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本更新"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="1px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病毒库更新"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="1px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系我们"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户体验计划"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:background="#F2F2F1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="1px"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="安装许可协议"
+                android:textSize="10sp"
+                android:background="#F2F2F1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rights"
+            android:textSize="10sp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

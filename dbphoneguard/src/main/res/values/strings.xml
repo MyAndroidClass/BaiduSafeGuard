@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">DBPhoneGuard</string>
+
+    <string name="agreen_xieyi">同意《<u>安装许可协议</u>》</string>
+    <string name="rights">Copyright &#169; 2017 Baidu,Inc.All Rights Reserved</string>
+
+
+    <string-array name="function_name">
+        <item>流量话费</item>
+        <item>回首页</item>
+        <item>应用管理</item>
+        <item>病毒查杀</item>
+        <item>骚扰拦截</item>
+        <item>软件锁</item>
+        <item>家人守护</item>
+        <item>手机充值</item>
+        <item>深度清理</item>
+        <item>安全工具</item>
+        <item>通话取证</item>
+        <item>Wi-Fi雷达</item>
+        <item>超强模式</item>
+        <item>通知盒子</item>
+        <item>红包助手</item>
+        <item>权限管理</item>
+    </string-array>
+
+    <string-array name="function_icon">
+        <item>flow_call</item>
+        <item>treasure_ches_down</item>
+        <item>app_manager</item>
+        <item>virus_killing</item>
+        <item>harassment_interception</item>
+        <item>software_lock</item>
+        <item>family_guardian</item>
+        <item>cellular_phone_replenishing</item>
+        <item>deep_cleaning</item>
+        <item>security_tool</item>
+        <item>call_forensics</item>
+        <item>wifi_radar</item>
+        <item>super_mode</item>
+        <item>notification_box</item>
+        <item>red_assistant</item>
+        <item>privilege_management</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

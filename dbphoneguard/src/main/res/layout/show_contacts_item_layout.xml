@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:background="#60cccccc">
+
+    <com.zzptc.sky.dbphoneguard.view.CircleTextImageView
+        android:id="@+id/rtv_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        app:citv_text_text="志琳"
+        app:citv_text_size="18sp"
+        app:citv_text_padding="35dp"
+        app:citv_text_color="#FFCCFF"
+        app:citv_fill_color="#50555D"/>
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/rtv_head"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胡志琳"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18711161317"
+            android:layout_marginTop="3dp"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_toRightOf="@id/ll_contact"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湖南省 长沙市"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_marginRight="20dp"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:checked="false"
+        android:enabled="false"
+        android:button="@null"
+        android:background="@drawable/help_chk_selector"
+        android:layout_alignTop="@+id/tv_address"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg_color">
+    <!-- 背景的图片 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/splash_third_bg"/>
+
+    <ImageView
+        android:id="@+id/iv_third_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/splash_third_center"
+        android:layout_centerInParent="true"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="45%"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/splash_third_top"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="30%"/>
+
+    <!-- 文字信息 -->
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_third_center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreen_xieyi"
+            android:textSize="12sp"
+            android:textColor="@color/splash_text_color"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:button="@null"
+                android:checked="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/splash_chk_selector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加入用户体验改进计划"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/splash_text_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_widthPercent="80%"
+        android:text="进入卫士"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:background="#239BFC"
+        android:layout_below="@+id/ll_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_go"
+        android:layout_marginTop="10dp"/>
+
+</android.support.percent.PercentRelativeLayout>
